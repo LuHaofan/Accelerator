@@ -33,7 +33,7 @@ class Ohara:
                             author_list_item.append(first+" "+last)
                         else:
                             author_list_item.append(author.strip())
-                    print(author_list_item)
+                    # print(author_list_item)
                     entry_row.set_property(slugify("Authors"), author_list_item)
                 elif line.startswith("title"):
                     title = line[line.find("{")+1:line.rfind("}")]
