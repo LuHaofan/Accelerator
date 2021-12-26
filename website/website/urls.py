@@ -1,4 +1,4 @@
-"""ohara URL Configuration
+"""website URL Configuration
 
 The `urlpatterns` list routes URLs to views. For more information please see:
     https://docs.djangoproject.com/en/3.2/topics/http/urls/
@@ -17,6 +17,6 @@ from django.contrib import admin
 from django.urls import path, include
 
 urlpatterns = [
-    path('uploader/', include('uploader.urls')),
+    path('ohara/', include('ohara.urls')),
     path('admin/', admin.site.urls),
 ]
