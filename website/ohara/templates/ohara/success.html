@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Success</title>
+</head>
+<body>
+    <h1>Success!</h1>
+    <form action="{%url 'ohara:return_to_upload' %}" method="post">
+        {% csrf_token %}
+        <input type="submit" value="Return to Upload Page">
+    </form>
+    <div><a href="{%url 'ohara:view_in_notion' %}">View in Notion</a></div>
+</body>
+</html>
